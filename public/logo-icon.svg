@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-label="Indus Valley Inc. logo mark">
+  <!-- Parallelogram shadow for 3-D depth (offset below-right) -->
+  <polygon points="50,14 88,52 50,90 12,52" transform="translate(5,5)" fill="#90aac8" opacity="0.45"/>
+
+  <!-- Main diamond — lighter (right/top face) -->
+  <polygon points="50,14 88,52 50,90 12,52" fill="#2e6ab4"/>
+
+  <!-- Left / bottom face — darker for 3-D effect -->
+  <polygon points="50,14 12,52 50,90" fill="#1a4480"/>
+
+  <!-- ── White IVi mark ── -->
+
+  <!-- I  (serifed capital) -->
+  <!-- top serif -->
+  <rect x="26" y="38" width="10" height="2.5" rx="0.5" fill="white"/>
+  <!-- stem -->
+  <rect x="29.75" y="40.5" width="2.5" height="21" fill="white"/>
+  <!-- bottom serif -->
+  <rect x="26" y="61.5" width="10" height="2.5" rx="0.5" fill="white"/>
+
+  <!-- V  (bold V) -->
+  <polygon points="41,38  44.5,38  50,57  55.5,38  59,38  50,64" fill="white"/>
+
+  <!-- i  (lowercase, with tittle/dot) -->
+  <!-- dot -->
+  <circle cx="66" cy="39.5" r="2.8" fill="white"/>
+  <!-- stem -->
+  <rect x="64.5" y="45" width="3" height="19" rx="0.5" fill="white"/>
+</svg>

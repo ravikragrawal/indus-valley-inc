@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 80" role="img" aria-label="Indus Valley, Inc.">
+  <!-- ── Diamond mark (scaled to 80×80 within the 100×100 viewBox, centred at 40,40) ── -->
+  <g transform="translate(0,0) scale(0.8)">
+    <!-- shadow -->
+    <polygon points="50,14 88,52 50,90 12,52" transform="translate(5,5)" fill="#90aac8" opacity="0.45"/>
+    <!-- light face -->
+    <polygon points="50,14 88,52 50,90 12,52" fill="#2e6ab4"/>
+    <!-- dark face -->
+    <polygon points="50,14 12,52 50,90" fill="#1a4480"/>
+
+    <!-- I -->
+    <rect x="26" y="38" width="10" height="2.5" rx="0.5" fill="white"/>
+    <rect x="29.75" y="40.5" width="2.5" height="21" fill="white"/>
+    <rect x="26" y="61.5" width="10" height="2.5" rx="0.5" fill="white"/>
+
+    <!-- V -->
+    <polygon points="41,38  44.5,38  50,57  55.5,38  59,38  50,64" fill="white"/>
+
+    <!-- i -->
+    <circle cx="66" cy="39.5" r="2.8" fill="white"/>
+    <rect x="64.5" y="45" width="3" height="19" rx="0.5" fill="white"/>
+  </g>
+
+  <!-- ── Wordmark ── -->
+  <!-- Company name -->
+  <text
+    x="92"
+    y="34"
+    font-family="'Segoe UI', Arial, sans-serif"
+    font-size="24"
+    font-weight="700"
+    letter-spacing="0.3"
+    fill="#1a2d55"
+  >Indus Valley, Inc.</text>
+
+  <!-- Tagline -->
+  <text
+    x="93"
+    y="54"
+    font-family="'Segoe UI', Arial, sans-serif"
+    font-size="13"
+    font-weight="400"
+    letter-spacing="1.2"
+    fill="#4a6080"
+  >Fast. Accurate. Secure.</text>
+</svg>

@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Skill(run)",
+      "Skill(run:*)",
+      "PowerShell(Head -30)",
+      "mcp__Claude_in_Chrome__tabs_context_mcp"
+    ]
+  }
+}
