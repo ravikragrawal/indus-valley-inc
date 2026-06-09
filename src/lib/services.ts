@@ -38,9 +38,9 @@ export const services: Service[] = [
     headline: "Transcription that's ready to use, not ready to re-edit",
     summary:
       "Medical, legal and business transcription with multi-pass QA and SLA-backed turnaround — so your team focuses on practice, not paperwork.",
-    metaTitle: "Medical, Legal & Business Transcription Services | Indus Valley Inc.",
+    metaTitle: "Medical & Legal Transcription Services",
     metaDescription:
-      "Accurate medical, legal and business transcription from Indus Valley Inc. Multi-pass QA, 99%+ accuracy, HIPAA-aware handling, 12–24 h turnaround. Outsource transcription today.",
+      "Accurate medical, legal and business transcription — multi-pass QA, 99%+ accuracy, HIPAA-aware, 12–24 h turnaround. Outsource to Indus Valley Inc.",
     photo: "/images/service-transcription.jpg",
     intro:
       "Every hour a physician, attorney or analyst spends transcribing is an hour not spent on the work only they can do. Indus Valley takes the audio off your plate and sends back clean, formatted documents on a schedule you can plan around.",
@@ -104,9 +104,9 @@ export const services: Service[] = [
     headline: "Accurate data entry at the volume your team cannot absorb",
     summary:
       "High-volume forms, records, catalogues and claims — entered accurately, processed on schedule, and off your team's plate permanently.",
-    metaTitle: "Data Entry & Data Processing Services | Indus Valley Inc.",
+    metaTitle: "Data Entry & Processing Outsourcing Services",
     metaDescription:
-      "Outsource high-volume data entry and processing to Indus Valley Inc. Forms, claims, catalogues, EMR/EHR data — double-keyed for accuracy with daily throughput SLAs.",
+      "Outsource high-volume data entry to Indus Valley Inc. Forms, claims, catalogues, EMR/EHR — double-keyed for accuracy with daily throughput SLAs.",
     photo: "/images/service-data-entry.jpg",
     intro:
       "Repetitive, high-volume data entry is the silent tax on your operations. It ties up skilled people, creates backlogs when volumes spike, and produces errors that cost far more to fix downstream than to prevent at source.",
@@ -169,9 +169,9 @@ export const services: Service[] = [
     headline: "Turn a messy database into one you can actually trust",
     summary:
       "Large-scale de-duplication, standardisation and enrichment — for CRMs, catalogues and records — so your systems run on clean data, not assumptions.",
-    metaTitle: "Data Cleanup, Cleansing & De-duplication Services | Indus Valley Inc.",
+    metaTitle: "Data Cleanup & De-duplication Services",
     metaDescription:
-      "Indus Valley Inc. cleans, de-duplicates and standardises large databases for CRM, e-commerce and healthcare. Before/after metrics guaranteed. Start with a free sample audit.",
+      "De-duplicate, standardise and enrich large databases for CRM, e-commerce and healthcare. Before/after metrics guaranteed. Free sample audit available.",
     photo: "/images/service-data-cleanup.jpg",
     intro:
       "Dirty data is not a minor inconvenience — it is a direct business cost. Duplicate records inflate marketing spend. Stale contacts trigger spam filters. Inconsistent formats block system integrations. The longer it goes uncleaned, the worse it gets.",
@@ -233,9 +233,9 @@ export const services: Service[] = [
     headline: "Make your numbers say something — at a glance, every day",
     summary:
       "Dashboards and recurring reports that turn raw data into clear, decision-ready visuals — built once, maintained and refreshed on your schedule.",
-    metaTitle: "Data Visualisation & Dashboard Development Services | Indus Valley Inc.",
+    metaTitle: "Data Visualisation & Dashboard Development",
     metaDescription:
-      "Indus Valley Inc. builds dashboards and recurring data reports that give executives live visibility. No more week-old spreadsheets. Faster decisions, lower reporting costs.",
+      "Dashboards and recurring reports that turn raw data into clear visuals. Executives get live visibility — no more week-old spreadsheets. Faster decisions.",
     photo: "/images/service-data-visualization.jpg",
     intro:
       "Data that cannot be read at a glance is data that does not get used. When executives wait days for reports and analysts spend hours reformatting spreadsheets, decisions slip and opportunities are missed. We build the visuals that make data legible — and keep them current.",
@@ -297,9 +297,9 @@ export const services: Service[] = [
     headline: "Move data between systems — without losing its meaning",
     summary:
       "Field-level mapping, migration and transformation between formats, schemas and platforms — with reconciliation at every step so nothing is lost in translation.",
-    metaTitle: "Data Mapping, Migration & Transformation Services | Indus Valley Inc.",
+    metaTitle: "Data Mapping, Migration & Transformation",
     metaDescription:
-      "Indus Valley Inc. manages complex data migrations with field-level mapping, pilot runs and full reconciliation. Zero data loss. On-time delivery. Healthcare, finance and enterprise.",
+      "Complex data migrations with field-level mapping, pilot runs and full reconciliation. Zero data loss. On-time delivery for healthcare, finance and enterprise.",
     photo: "/images/service-data-mapping.jpg",
     intro:
       "Data migrations are where projects fail quietly: a field mapped to the wrong column, a date format that breaks a validation rule, a lookup table that does not survive the move. The risk is not in the transfer — it is in the mapping. We own the mapping logic from definition through to post-migration reconciliation.",
@@ -361,9 +361,9 @@ export const services: Service[] = [
     headline: "Steady hands on the work that keeps your business running",
     summary:
       "Managed back-office and BPO support — order processing, document handling, account admin, research — handled by a dedicated team you never have to recruit.",
-    metaTitle: "Back-Office Support & BPO Services | Indus Valley Inc.",
+    metaTitle: "Back-Office Support & BPO Outsourcing",
     metaDescription:
-      "Outsource back-office operations to Indus Valley Inc. — order processing, account admin, research, document handling. Dedicated team, agreed SLAs, Bangalore India.",
+      "Outsource back-office operations — order processing, account admin, research, document handling. Dedicated team, agreed SLAs, Bangalore, India.",
     photo: "/images/service-back-office.jpg",
     intro:
       "Your best people are generalists who can sell, solve problems and build relationships. Every hour they spend on order processing, record admin or list-building is an hour they are not doing what you hired them for. We take the back office off their hands — permanently.",
@@ -426,9 +426,9 @@ export const services: Service[] = [
     headline: "Every call answered — inbound support and outbound campaigns",
     summary:
       "Trained, managed agents handling inbound customer support and outbound campaigns — with the coverage hours, languages and scripts your customers expect.",
-    metaTitle: "Inbound & Outbound Call Centre Services | Indus Valley Inc.",
+    metaTitle: "Inbound & Outbound Call Centre Services",
     metaDescription:
-      "Indus Valley Inc. provides inbound customer support and outbound calling from Bangalore, India. 24/7 coverage, trained agents, monitored quality. Extend your reach without the infrastructure cost.",
+      "Inbound customer support and outbound calling from Bangalore, India. 24/7 coverage, trained agents, monitored quality — without the infrastructure cost.",
     photo: "/images/service-call-centre.jpg",
     intro:
       "Every unanswered call outside business hours is a lead lost to a competitor who picked up. Every support call routed to an undertrained agent is a customer relationship at risk. We provide trained, monitored agents at the coverage hours your customers demand — without the fixed-cost infrastructure of an internal call centre.",
@@ -491,9 +491,9 @@ export const services: Service[] = [
     headline: "Build the systems behind your operations — and keep them running",
     summary:
       "Website design, e-commerce, SEO and application development — delivered in milestones, maintained long-term, and built to perform in search.",
-    metaTitle: "Web Design, E-Commerce & IT Development Services | Indus Valley Inc.",
+    metaTitle: "Web Design, E-Commerce & IT Development",
     metaDescription:
-      "Indus Valley Inc. builds websites, e-commerce stores and custom applications for businesses in India and globally. SEO-first development, performance-optimised, milestone delivery.",
+      "Websites, e-commerce stores and custom applications built SEO-first, performance-optimised, delivered in milestones. India-based team, global clients.",
     photo: "/images/service-web-it.jpg",
     intro:
       "A slow website costs you Google rankings before it costs you sales. An e-commerce store with poor UX converts at 1 % when it should convert at 3 %. A business system that the team fears touching because it might break is a liability, not an asset. We build for performance, maintain for longevity, and optimise for search from day one.",

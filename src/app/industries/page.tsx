@@ -42,6 +42,7 @@ export default function IndustriesPage() {
       <section className="py-20">
         <Container>
           <SectionHeading
+            as="h1"
             eyebrow="Industries"
             title="Sector experience that shows in the output"
             intro="The work is similar across industries; the details aren't. Here's where we most often help."

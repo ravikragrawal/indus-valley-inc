@@ -8,7 +8,7 @@ import { breadcrumbLd } from "@/components/seo/structuredData";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Contact Indus Valley Inc.",
+  title: "Contact Us",
   description:
     "Contact Indus Valley Inc. in Bangalore, India for transcription, data and back-office services. Call, WhatsApp, or send your requirement.",
   alternates: { canonical: "/contact" },
@@ -28,6 +28,7 @@ export default function ContactPage() {
           {/* Left — contact details + quick-reach channels */}
           <div>
             <SectionHeading
+              as="h1"
               eyebrow="Contact"
               title="Tell us what's piling up"
               intro="Send your requirement and we'll reply within one business day with how we'd approach it."

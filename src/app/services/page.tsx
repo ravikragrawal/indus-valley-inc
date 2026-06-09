@@ -6,9 +6,9 @@ import { breadcrumbLd } from "@/components/seo/structuredData";
 import { services } from "@/lib/services";
 
 export const metadata: Metadata = {
-  title: "ITeS & BPO Services — Transcription, Data, Back-Office | Indus Valley Inc.",
+  title: "ITeS & BPO Outsourcing Services",
   description:
-    "Medical transcription, data entry, data cleanup, visualisation, migration, back-office support, call centre and web development — managed and scalable from Bangalore, India. Serving US, UK, AU clients since 2003.",
+    "Medical transcription, data entry, cleanup, visualisation, back-office, call centre and web development. Managed, scalable, SLA-backed — Bangalore, India.",
   alternates: { canonical: "/services" },
   openGraph: {
     title: "ITeS & BPO Services | Indus Valley Inc.",
@@ -28,6 +28,7 @@ export default function ServicesPage() {
       <section className="py-20">
         <Container>
           <SectionHeading
+            as="h1"
             eyebrow="Services"
             title="Services that absorb your operational load"
             intro="Each one is a managed operation — scoped, piloted, then scaled to your volume. Pick where it hurts most."

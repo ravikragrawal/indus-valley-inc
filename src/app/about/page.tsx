@@ -5,9 +5,9 @@ import { JsonLd } from "@/components/seo/JsonLd";
 import { breadcrumbLd } from "@/components/seo/structuredData";
 
 export const metadata: Metadata = {
-  title: "About Indus Valley Inc. — ITeS Company Since 2003",
+  title: "About Us — ITeS & BPO Company Since 2003",
   description:
-    "Founded in 2003 and headquartered in Bangalore, Indus Valley Inc. is an IT-enabled services partner for transcription, data and back-office operations worldwide.",
+    "Founded 2003 in Bangalore, India. Indus Valley Inc. is an ITeS partner for transcription, data and back-office operations for clients worldwide.",
   alternates: { canonical: "/about" },
 };
 
@@ -23,6 +23,7 @@ export default function AboutPage() {
       <section className="py-20">
         <Container className="max-w-3xl">
           <SectionHeading
+            as="h1"
             eyebrow="About"
             title="Two decades of getting the work done"
             intro="Founded in November 2003 in Bangalore, India, Indus Valley Inc. began in healthcare transcription and grew into a broad IT-enabled services partner."

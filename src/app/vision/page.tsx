@@ -12,9 +12,9 @@ import { JsonLd } from "@/components/seo/JsonLd";
 import { breadcrumbLd } from "@/components/seo/structuredData";
 
 export const metadata: Metadata = {
-  title: "Vision & Mission | Indus Valley Inc.",
+  title: "Vision & Mission",
   description:
-    "Indus Valley Inc.'s vision: to be the world's most trusted operational partner for growing businesses. Our mission, values, business outlook, future demand drivers, and the industries we serve.",
+    "Our vision, mission, core values and business outlook — plus future demand drivers in the $586B global BPO market and the 8 industries we serve.",
   alternates: { canonical: "/vision" },
   openGraph: {
     title: "Vision & Mission | Indus Valley Inc.",

@@ -30,12 +30,15 @@ export function SectionHeading({
   intro,
   className = "",
   center = false,
+  as: Tag = "h2",
 }: {
   eyebrow?: string;
   title: string;
   intro?: string;
   className?: string;
   center?: boolean;
+  /** Override heading level — use "h1" for the primary page heading */
+  as?: "h1" | "h2" | "h3";
 }) {
   return (
     <div className={`${center ? "mx-auto text-center" : ""} max-w-2xl ${className}`}>
@@ -44,9 +47,9 @@ export function SectionHeading({
           {eyebrow}
         </span>
       )}
-      <h2 className="mt-3 font-display text-3xl font-bold leading-tight text-navy sm:text-4xl">
+      <Tag className="mt-3 font-display text-3xl font-bold leading-tight text-navy sm:text-4xl">
         {title}
-      </h2>
+      </Tag>
       {intro && <p className="mt-4 text-lg text-ink/70">{intro}</p>}
     </div>
   );

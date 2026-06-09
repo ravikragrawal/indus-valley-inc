@@ -23,6 +23,7 @@ export default function HowWeWorkPage() {
       <section className="py-20">
         <Container>
           <SectionHeading
+            as="h1"
             eyebrow="How we work"
             title="A pilot first, then scale — never a leap of faith"
             intro="Every engagement starts small and proves itself before it grows. You see quality on a real batch before you commit to volume."

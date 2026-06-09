@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     template: "%s | Indus Valley Inc.",
   },
   description:
-    "Indus Valley Inc. is a Bangalore-based ITeS and BPO company providing medical transcription, data entry, data cleanup, data visualisation, back-office support, call centre and web development services. Serving US, UK, AU and global clients since 2003. Fast. Accurate. Secure.",
+    "Bangalore ITeS & BPO partner since 2003 — medical transcription, data entry, cleanup, back-office and call centre. SLA-backed accuracy for global clients.",
   alternates: { canonical: "/" },
   keywords: [
     "ITeS services India",
