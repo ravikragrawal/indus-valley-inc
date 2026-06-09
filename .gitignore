@@ -28,9 +28,10 @@ next-env.d.ts
 Thumbs.db
 desktop.ini
 
-# Editor
+# Editor & AI assistant local config (never commit these)
 .vscode/
 .idea/
+.claude/
 *.swp
 *.swo
 
