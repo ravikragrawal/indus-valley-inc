@@ -55,7 +55,8 @@ export default function HomePage() {
             className="h-full w-full object-cover object-center"
             fetchPriority="high"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-navy/92 via-navy/75 to-navy/40" />
+          {/* Stronger overlay — left copy stays crisp even where photo is bright */}
+          <div className="absolute inset-0 bg-gradient-to-r from-navy/97 via-navy/88 to-navy/60" />
         </div>
 
         <Container className="w-full py-24 lg:py-32">
@@ -71,12 +72,12 @@ export default function HomePage() {
                 <span className="text-signal"> that never stops</span>
               </h1>
 
-              <p className="mt-6 max-w-xl text-lg leading-relaxed text-paper/80">
+              <p className="mt-6 max-w-xl text-lg leading-relaxed text-white text-shadow">
                 Indus Valley Inc. absorbs your transcription, data and back-office volume — accurately, securely, on schedule — so your core team focuses entirely on growing the business.
               </p>
 
               {/* Mini proof points */}
-              <ul className="mt-6 grid grid-cols-2 gap-2 sm:grid-cols-3 text-sm text-paper/70">
+              <ul className="mt-6 grid grid-cols-2 gap-2 sm:grid-cols-3 text-sm text-white/95 text-shadow-sm">
                 {["20+ years experience","99%+ accuracy SLA","Healthcare-grade security","8 service lines","Global client base","Pilot before you commit"].map(p => (
                   <li key={p} className="flex items-center gap-1.5">
                     <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-signal" />
@@ -98,16 +99,16 @@ export default function HomePage() {
             {/* Right — flow widget */}
             <div className="flex flex-col justify-center gap-5 lg:col-span-5">
               <div className="rounded-2xl border border-paper/20 bg-paper/10 p-5 backdrop-blur-sm">
-                <p className="mb-3 text-xs font-semibold uppercase tracking-widest text-paper/50">How work flows through us</p>
+                <p className="mb-3 text-xs font-semibold uppercase tracking-widest text-white/80">How work flows through us</p>
                 <ThroughputLane intake="Raw audio, files, records" output="Clean, usable data" />
-                <p className="mt-3 font-mono text-xs text-paper/50">
+                <p className="mt-3 font-mono text-xs text-white/75">
                   Messy and high-volume in. Accurate, structured and on schedule out.
                 </p>
               </div>
 
               {/* Quick service links */}
               <div className="rounded-2xl border border-paper/20 bg-paper/10 p-5 backdrop-blur-sm">
-                <p className="mb-3 text-xs font-semibold uppercase tracking-widest text-paper/50">Most requested services</p>
+                <p className="mb-3 text-xs font-semibold uppercase tracking-widest text-white/80">Most requested services</p>
                 <div className="grid grid-cols-2 gap-2">
                   {[
                     { icon: Mic2,         label: "Transcription",     href: "/services/transcription" },

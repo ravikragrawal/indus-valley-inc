@@ -61,19 +61,20 @@ export default function ServiceDetailPage({ params }: { params: { slug: string }
             className="h-full w-full object-cover"
             fetchPriority="high"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-navy/85 via-navy/60 to-transparent" />
+          {/* Stronger overlay for legibility on all photos */}
+          <div className="absolute inset-0 bg-gradient-to-r from-navy/95 via-navy/78 to-navy/40" />
           <div className="absolute inset-0 flex items-center">
             <Container>
               <nav aria-label="Breadcrumb" className="mb-4">
-                <ol className="flex items-center gap-1.5 text-xs text-paper/60">
-                  <li><Link href="/" className="hover:text-paper">Home</Link></li>
+                <ol className="flex items-center gap-1.5 text-xs text-white/80 text-shadow-sm">
+                  <li><Link href="/" className="hover:text-white">Home</Link></li>
                   <li aria-hidden>/</li>
-                  <li><Link href="/services" className="hover:text-paper">Services</Link></li>
+                  <li><Link href="/services" className="hover:text-white">Services</Link></li>
                   <li aria-hidden>/</li>
-                  <li className="text-paper/90">{s.name}</li>
+                  <li className="text-white">{s.name}</li>
                 </ol>
               </nav>
-              <h1 className="max-w-2xl font-display text-3xl font-bold leading-tight text-paper sm:text-4xl lg:text-5xl">
+              <h1 className="max-w-2xl font-display text-3xl font-bold leading-tight text-white text-shadow sm:text-4xl lg:text-5xl">
                 {s.headline}
               </h1>
               {s.turnaround && (
