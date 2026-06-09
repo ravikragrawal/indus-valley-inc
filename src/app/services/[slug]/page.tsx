@@ -5,7 +5,7 @@ import {
   CheckCircle2, AlertTriangle, Lightbulb, Quote, ChevronDown,
 } from "lucide-react";
 import { Container } from "@/components/Container";
-import { CTA } from "@/components/Sections";
+import { CTA, ScheduleCallStrip } from "@/components/Sections";
 import { FAQ } from "@/components/FAQ";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { serviceLd, breadcrumbLd, serviceReviewLd } from "@/components/seo/structuredData";
@@ -169,6 +169,13 @@ export default function ServiceDetailPage({ params }: { params: { slug: string }
               )}
             </div>
           </div>
+        </Container>
+      </section>
+
+      {/* ── Schedule a call strip ── */}
+      <section className="py-10">
+        <Container className="max-w-4xl">
+          <ScheduleCallStrip />
         </Container>
       </section>
 

@@ -4,6 +4,7 @@ import {
   ArrowLeftRight, Building2, PhoneCall, Globe,
   ShieldCheck, Clock, Users, TrendingUp,
   CheckCircle2, ArrowRight, Star, Zap, Lock,
+  CalendarCheck, MessageSquare,
 } from "lucide-react";
 import { Container } from "@/components/Container";
 import { services } from "@/lib/services";
@@ -51,11 +52,13 @@ export function SectionHeading({
   );
 }
 
-/* ════════════════════════════════════════════════════ */
+/* ════════════════════════════════════════════════════
+   PRIMARY CTA — full-width "Schedule a call" panel
+════════════════════════════════════════════════════ */
 export function CTA({
-  title = "Tell us what's piling up. We'll tell you how we'd clear it.",
-  buttonLabel = "Get a quote",
-  href = "/quote",
+  title = "Ready to hand off the work that's draining your team?",
+  buttonLabel = "Schedule a call with our experts",
+  href = "/contact",
 }: {
   title?: string;
   buttonLabel?: string;
@@ -66,20 +69,81 @@ export function CTA({
       {/* decorative rings */}
       <div className="pointer-events-none absolute -right-24 -top-24 h-96 w-96 rounded-full border border-paper/10" />
       <div className="pointer-events-none absolute -right-12 -top-12 h-64 w-64 rounded-full border border-paper/10" />
-      <Container className="relative flex flex-col items-start justify-between gap-8 sm:flex-row sm:items-center">
-        <div className="max-w-xl">
-          <h2 className="font-display text-2xl font-bold text-paper sm:text-3xl">{title}</h2>
-          <p className="mt-2 text-paper/65">Response within one business day.</p>
+      <div className="pointer-events-none absolute -left-20 bottom-0 h-72 w-72 rounded-full bg-channel/10 blur-3xl" />
+
+      <Container className="relative">
+        <div className="mx-auto max-w-2xl text-center">
+          {/* eyebrow */}
+          <span className="inline-flex items-center gap-2 rounded-full border border-signal/50 bg-signal/10 px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-signal">
+            <CalendarCheck className="h-3.5 w-3.5" /> Let's talk
+          </span>
+
+          <h2 className="mt-4 font-display text-3xl font-bold text-white sm:text-4xl lg:text-5xl">
+            {title}
+          </h2>
+
+          <p className="mt-4 text-lg text-white/75">
+            Book a free 30-minute call with our expert team. Tell us your specific requirements — we'll propose a tailored pilot within 24 hours. No obligation, no jargon.
+          </p>
+
+          {/* Social proof micro-copy */}
+          <div className="mt-6 flex flex-wrap items-center justify-center gap-4 text-sm text-white/55">
+            <span className="flex items-center gap-1.5"><CheckCircle2 className="h-3.5 w-3.5 text-signal" /> Response within 4 business hours</span>
+            <span className="flex items-center gap-1.5"><CheckCircle2 className="h-3.5 w-3.5 text-signal" /> Free pilot available</span>
+            <span className="flex items-center gap-1.5"><CheckCircle2 className="h-3.5 w-3.5 text-signal" /> No long-term commitment</span>
+          </div>
+
+          {/* Buttons */}
+          <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
+            <Link
+              href={href}
+              className="group inline-flex items-center gap-2 rounded-md bg-signal px-8 py-4 text-base font-bold text-ink shadow-lg shadow-signal/25 transition-all hover:bg-signal-deep hover:shadow-signal/40 hover:gap-3"
+            >
+              <CalendarCheck className="h-5 w-5" />
+              {buttonLabel}
+              <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+            </Link>
+            <Link
+              href="https://wa.me/919886024388"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-md border border-paper/30 bg-paper/10 px-7 py-4 text-base font-semibold text-white backdrop-blur-sm transition hover:border-paper/60 hover:bg-paper/20"
+            >
+              <MessageSquare className="h-5 w-5 text-emerald-400" />
+              WhatsApp us instead
+            </Link>
+          </div>
         </div>
-        <Link
-          href={href}
-          className="group inline-flex shrink-0 items-center gap-2 rounded-md bg-signal px-7 py-3.5 font-semibold text-ink transition-all hover:bg-signal-deep"
-        >
-          {buttonLabel}
-          <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
-        </Link>
       </Container>
     </section>
+  );
+}
+
+/* ════════════════════════════════════════════════════
+   INLINE SCHEDULE-CALL STRIP — lighter, for mid-page use
+════════════════════════════════════════════════════ */
+export function ScheduleCallStrip() {
+  return (
+    <div className="rounded-2xl bg-gradient-to-r from-channel/15 via-channel/5 to-transparent border border-channel/25 p-6 sm:p-8">
+      <div className="flex flex-col gap-5 sm:flex-row sm:items-center sm:justify-between">
+        <div>
+          <p className="font-display text-lg font-bold text-navy sm:text-xl">
+            Speak directly with a service specialist
+          </p>
+          <p className="mt-1 text-sm text-ink/65">
+            Describe your workflow — we'll tell you exactly how we'd handle it and what it would cost.
+          </p>
+        </div>
+        <Link
+          href="/contact"
+          className="group inline-flex shrink-0 items-center gap-2 rounded-md bg-navy px-6 py-3 text-sm font-semibold text-white transition-all hover:bg-navy/80 hover:gap-3"
+        >
+          <CalendarCheck className="h-4 w-4 text-signal" />
+          Schedule a call
+          <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+        </Link>
+      </div>
+    </div>
   );
 }
 

@@ -10,11 +10,18 @@ export function Footer() {
         <div className="md:col-span-1">
           {/* Logo on white pill — GIFs have opaque backgrounds so we display them naturally */}
           <Link href="/" aria-label={site.name}>
-            <div className="inline-flex items-center gap-2 rounded-xl bg-white px-3 py-2 shadow-sm">
+            <div className="inline-flex items-center gap-2.5 rounded-xl bg-white px-3 py-2 shadow-sm">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img src="/logo-icon.gif" alt="Indus Valley Inc." className="h-9 w-9 object-contain" />
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/logo-full.gif" alt="" aria-hidden="true" className="h-6 w-32 object-contain object-left" />
+              {/* Text wordmark — navy on white pill is legible */}
+              <div className="flex flex-col" aria-hidden="true">
+                <span className="font-display text-sm font-bold leading-tight tracking-tight text-navy">
+                  Indus Valley, Inc.
+                </span>
+                <span className="font-mono text-[9px] uppercase tracking-[0.22em] text-channel">
+                  Mind Over Machine
+                </span>
+              </div>
             </div>
           </Link>
           <p className="mt-3 max-w-xs text-sm text-paper/70">

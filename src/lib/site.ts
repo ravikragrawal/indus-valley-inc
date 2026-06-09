@@ -7,7 +7,8 @@ export const site = {
   // Canonical production URL — update if you choose the www variant.
   url: "https://indusvalleyinc.com",
   founded: "2003-11", // VERIFY exact month/year
-  tagline: "Your operations partner for the work that never stops",
+  tagline: "Mind Over Machine",
+  taglineSub: "Your operations partner for the work that never stops",
   description:
     "Indus Valley Inc. is an IT-enabled services (ITeS) and BPO company that takes on high-volume transcription, data and back-office work — accurate, secure and on schedule.",
   // Sister brand (AI consulting arm)

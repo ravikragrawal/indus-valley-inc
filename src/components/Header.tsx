@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
+import { CalendarCheck } from "lucide-react";
 import { Container } from "@/components/Container";
 import { nav, site } from "@/lib/site";
 
@@ -11,22 +12,23 @@ export function Header() {
   return (
     <header className="sticky top-0 z-40 border-b border-line bg-paper/90 backdrop-blur">
       <Container className="flex h-16 items-center justify-between">
-        <Link href="/" className="flex items-center gap-1" aria-label={site.name}>
-          {/* PRIMARY — diamond IVi mark, fixed width */}
+        <Link href="/" className="flex items-center gap-2.5" aria-label={site.name}>
+          {/* PRIMARY — diamond IVi mark */}
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src="/logo-icon.gif"
             alt="Indus Valley Inc."
             className="h-10 w-10 object-contain"
           />
-          {/* SECONDARY — wordmark, same CSS width as icon */}
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src="/logo-full.gif"
-            alt=""
-            aria-hidden="true"
-            className="hidden h-10 w-32 object-contain object-left sm:block"
-          />
+          {/* SECONDARY — text wordmark */}
+          <div className="hidden flex-col sm:flex" aria-hidden="true">
+            <span className="font-display text-sm font-bold leading-tight tracking-tight text-navy">
+              Indus Valley, Inc.
+            </span>
+            <span className="font-mono text-[9px] uppercase tracking-[0.22em] text-channel">
+              Mind Over Machine
+            </span>
+          </div>
         </Link>
 
         <nav className="hidden items-center gap-7 md:flex" aria-label="Primary">
@@ -40,10 +42,11 @@ export function Header() {
             </Link>
           ))}
           <Link
-            href="/quote"
-            className="rounded-md bg-signal px-4 py-2 text-sm font-semibold text-ink transition-colors hover:bg-signal-deep"
+            href="/contact"
+            className="inline-flex items-center gap-1.5 rounded-md bg-signal px-4 py-2 text-sm font-semibold text-ink transition-colors hover:bg-signal-deep"
           >
-            Get a quote
+            <CalendarCheck className="h-3.5 w-3.5" />
+            Schedule a call
           </Link>
         </nav>
 
@@ -72,11 +75,12 @@ export function Header() {
             </Link>
           ))}
           <Link
-            href="/quote"
-            className="mt-2 rounded-md bg-signal px-4 py-2 text-center text-sm font-semibold text-ink"
+            href="/contact"
+            className="mt-2 inline-flex items-center justify-center gap-1.5 rounded-md bg-signal px-4 py-2 text-center text-sm font-semibold text-ink"
             onClick={() => setOpen(false)}
           >
-            Get a quote
+            <CalendarCheck className="h-3.5 w-3.5" />
+            Schedule a call
           </Link>
         </Container>
       )}

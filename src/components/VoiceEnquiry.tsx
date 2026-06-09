@@ -41,16 +41,34 @@ const STEPS: Step[] = [
 type FieldValues = Record<Step["field"], string>;
 
 // Thin wrapper so TypeScript knows about the Web Speech API
+interface ISpeechRecognition extends EventTarget {
+  lang: string;
+  continuous: boolean;
+  interimResults: boolean;
+  maxAlternatives: number;
+  start(): void;
+  stop(): void;
+  abort(): void;
+  onresult: ((e: SpeechRecognitionEvent) => void) | null;
+  onerror: ((e: Event) => void) | null;
+  onend: (() => void) | null;
+}
+
+interface SpeechRecognitionEvent extends Event {
+  resultIndex: number;
+  results: SpeechRecognitionResultList;
+}
+
 declare global {
   interface Window {
-    SpeechRecognition: new () => SpeechRecognition;
-    webkitSpeechRecognition: new () => SpeechRecognition;
+    SpeechRecognition: new () => ISpeechRecognition;
+    webkitSpeechRecognition: new () => ISpeechRecognition;
   }
 }
 
-function getSR(): (new () => SpeechRecognition) | null {
+function getSR(): (new () => ISpeechRecognition) | null {
   if (typeof window === "undefined") return null;
-  return window.SpeechRecognition ?? window.webkitSpeechRecognition ?? null;
+  return (window.SpeechRecognition ?? window.webkitSpeechRecognition) ?? null;
 }
 
 type SubmitStatus = "idle" | "sending" | "done" | "error";
@@ -63,7 +81,7 @@ export function VoiceEnquiry() {
   const [interim, setInterim] = useState("");
   const [submitStatus, setSubmitStatus] = useState<SubmitStatus>("idle");
   const [speechSupported, setSpeechSupported] = useState(true);
-  const srRef = useRef<SpeechRecognition | null>(null);
+  const srRef = useRef<ISpeechRecognition | null>(null);
 
   useEffect(() => {
     if (!getSR()) setSpeechSupported(false);

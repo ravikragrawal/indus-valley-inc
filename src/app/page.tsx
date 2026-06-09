@@ -4,7 +4,7 @@ import {
   ArrowLeftRight, Building2, PhoneCall, Globe,
   Stethoscope, Scale, ShieldCheck, ShoppingCart,
   Truck, Home, Cpu, HeartHandshake,
-  ArrowRight, ChevronRight,
+  ArrowRight, ChevronRight, CalendarCheck,
 } from "lucide-react";
 import { Container } from "@/components/Container";
 import { ThroughputLane } from "@/components/ThroughputLane";
@@ -19,6 +19,7 @@ import {
   TestimonialStrip,
 } from "@/components/Sections";
 import { FAQ } from "@/components/FAQ";
+import { LeaderQuotes } from "@/components/LeaderQuotes";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { faqLd, howToLd } from "@/components/seo/structuredData";
 import { services } from "@/lib/services";
@@ -87,8 +88,9 @@ export default function HomePage() {
               </ul>
 
               <div className="mt-8 flex flex-wrap gap-3">
-                <Link href="/quote" className="inline-flex items-center gap-2 rounded-md bg-signal px-7 py-3.5 font-semibold text-ink transition-all hover:bg-signal-deep hover:gap-3">
-                  Get a free quote <ArrowRight className="h-4 w-4" />
+                <Link href="/contact" className="inline-flex items-center gap-2 rounded-md bg-signal px-7 py-3.5 font-semibold text-ink shadow-lg shadow-signal/30 transition-all hover:bg-signal-deep hover:gap-3">
+                  <CalendarCheck className="h-4 w-4" />
+                  Schedule a call with our experts
                 </Link>
                 <Link href="/services" className="inline-flex items-center gap-2 rounded-md border border-paper/40 bg-paper/10 px-7 py-3.5 font-semibold text-paper backdrop-blur-sm transition-all hover:border-paper hover:bg-paper/20">
                   Explore services <ChevronRight className="h-4 w-4" />
@@ -356,6 +358,11 @@ export default function HomePage() {
           </div>
         </Container>
       </section>
+
+      {/* ══════════════════════════════════════════
+          LEADER QUOTES
+      ══════════════════════════════════════════ */}
+      <LeaderQuotes />
 
       {/* ══════════════════════════════════════════
           FAQ
